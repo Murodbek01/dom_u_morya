@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+{% load humanize %}
+{% block html_title %}
+Дом {{ house.name }}
+{% endblock %}
+
+{% block application %}
+    <div class="content2">
+        <div class="home2">
+            <h2>{{ house.name }}</h2>
+            <div class="price">{{ house.price|intcomma }} руб.</div>
+            {% if house.photo %}
+                <img src="{{ house.photo.url }}" alt="{{ house.name }}">
+            {% endif %}
+            <div class="text">{{ house.description }}</div>
+        </div>
+            <div class="form1">
+               <h2>Заявка</h2>
+                {% if sended %}
+                Спасибо! Ваша заявка принята!
+                {% endif %}
+                <form  action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Отправить заявку">
+                </form>
+           </div>
+    </div>
+
+{% endblock %}

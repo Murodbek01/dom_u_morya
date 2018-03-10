@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% load  humanize %}
+
+{% block application %}
+
+    <form class="forma" action="" method="get">
+    <b>Цена</b>
+    {{ form }}
+    <input type="submit" value="Поиск">
+    </form>
+    <div class="content">
+    {% for house in houses %}
+        <div class="home">
+            {% if house.photo %}
+                <img src="{{ house.photo.url }}" alt="{{ house.name }}">
+            {% endif %}
+            <h2><a href="{% url 'house' house_id=house.id %}">{{ house.name }}</a></h2>
+            <div>{{ house.price|intcomma }} руб.</div>
+        </div>
+{% endfor %}
+     </div>
+{% endblock %}

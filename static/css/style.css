@@ -1,0 +1,106 @@
+header{
+    background-color: #E9E9E7;
+    padding-left: 500px;
+}
+.forma{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+label{
+    margin: 10px;
+}
+.forma input{
+    padding: 5px;
+}
+select{
+    padding: 5px;
+}
+form input[type="submit"] {
+    background-color: #1CC972;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.content{
+    overflow: hidden;
+}
+.content2{
+    overflow: hidden;
+
+}
+.home2{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 800px;
+    padding-left: 70px;
+    float: left;
+    margin-right: 70px;
+}
+.text{
+    padding-right: 110px;
+    text-align: justify;
+    line-height: 1.7em;
+}
+.price{
+    border: 1px solid black;
+    width: 25%;
+    margin-top: 23px;
+    margin-left: 20%;
+    font-weight: 800;
+}
+
+.home2 img{
+    border: 4px solid #C9E9C4;
+    width: 680px;
+    height: 400px;
+}
+.home2 h2{
+    width: 25%;
+    float: left;
+
+}
+.home {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width:400px;
+    height: 430px;
+    margin-left: 40px;
+    text-align: center;
+    float: left;
+}
+.home img{
+    border: 4px solid #C9E9C4;
+    width: 380px;
+    height: 300px;
+}
+
+.form1{
+    width: 20%;
+    background-color: #E9E9E7;
+    margin-left: 900px;
+    margin-top: 75px;
+    padding-top: 0px;
+    padding-left: 30px;
+    text-align: left;
+    padding-bottom: 45px;
+}
+.form1 input[type="submit"]{
+    float: right;
+    margin-right: 25px;
+}
+p input{
+    float: right;
+    margin-right: 25px;
+}
+
+footer{
+    width: 100%;
+	height: 60px;
+    padding: 10px;
+	text-align: center;
+	background-color: rgba(93, 77, 74, 0.82);
+	color: #a8aa94;
+
+}
